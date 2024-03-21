@@ -1,0 +1,53 @@
+body {
+  direction: rtl;
+  font-family: "Courier New", Courier, monospace;
+  background-image: url("https://dmrqkbkq8el9i.cloudfront.net/Pictures/2000xAny/9/2/9/271929_supermarketaisleshelves_521159.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#bg-div {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#my-div {
+  width: 450px;
+  height: auto;
+  min-height: 500px;
+  box-shadow: 1px 1px 3px 3px #aaa;
+  margin: 10px auto;
+  border-radius: 3px;
+  background-color: white;
+}
+label {
+  padding: 25px;
+}
+input {
+  padding: 8px;
+  margin: 10px;
+}
+#btn {
+  float: left;
+}
+table {
+  width: 100%;
+}
+table th {
+  background-color: rgba(137, 43, 226, 0.645);
+}
+#tBod {
+  text-align: center;
+}
+#tBod tr:nth-child(2n) {
+  background-color: blanchedalmond;
+}
+table tfoot {
+  background-color: rgba(137, 43, 226, 0.622);
+  float: left;
+}
+#print-btn{
+    float: left;
+}

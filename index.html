@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" href="custom.css" />
+    <link rel="stylesheet" href="print.css" media="print"/>
+    <title>Invoicess Project</title>
+    
+</head>
+
+<body>
+    <div id="bg-div">
+    <div id="my-div">
+        <label for="name">نام مشتری</label>
+        <input type="text" id="name" /><br />
+        <label for="productName" id="pn">نام محصول</label>
+        <input type="text" id="productName"/><br />
+        <label for="productPrice" id="pr">قیمت محصول</label>
+        <input type="number" id="productPrice"/><br />
+        <label for="count" id="co">تعداد</label>
+        <input type="number" id="count"/><br />
+        <input id="btn" type="button" value="ثبت" onclick="btnclick()"><br><br><br>
+        <hr><br>
+        <table id="result-table">
+            <thead id="result-table">
+                <th>نام محصول</th>
+                <th>قیمت محصول</th>
+                <th>تعداد</th>
+                <th>جمع کل</th>
+            </thead>
+            <tbody id="tBod"></tbody>
+            <tfoot id="tFoot"></tfoot>
+        </table>
+        <input type="button" value="چاپ فاکتور" id="print-btn" onclick="printB()">
+    </div>
+</div>
+    <script src="default.js"></script>
+</body>
+
+</html>

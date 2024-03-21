@@ -1,0 +1,38 @@
+body {
+  background: none;
+  background-color: #fff;
+}
+#bg-div {
+  background: #fff;
+}
+#my-div {
+  width: 100%;
+  box-shadow: none;
+}
+#pn {
+  display: none;
+}
+#pr {
+  display: none;
+}
+#co {
+  display: none;
+}
+#btn {
+  display: none;
+}
+#print-btn {
+  display: none;
+}
+#result-table {
+  background-color: white;
+}
+input[type="text"] {
+  border: none;
+  box-shadow: none;
+  background-color: #fff;
+}
+input[type="number"] {
+  border: none;
+  box-shadow: none;
+}
