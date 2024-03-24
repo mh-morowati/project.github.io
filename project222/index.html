@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="custom.css" />
+    <title>Recruitment Project</title>
+
+</head>
+
+<body>
+    <main>
+    <div id="div-head">
+        <img src="src\images\logo.png" alt="logo" width="40px"/>
+        <h1>فرم بررسی استخدام نیروی شرکت فناوران X</h1>
+        </div>
+    <div id="my-div">
+        <table>
+                <td class="title">مدرک:</td>
+                <td><select required name="education" id="degree" class="content">
+                        <option value="diploma">دیپلم</option>
+                        <option value="ad">کاردانی</option>
+                        <option value="bs" selected>لیسانس</option>
+                        <option value="msc">ارشد</option>
+                        <option value="Phd">دکتری</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td class="title">سن:</td>
+                <td><input type="number" class="content" id="age"></td>
+            </tr>
+            <tr>
+                <td class="title"></td>
+            <td class="content">
+                <input type="checkbox" id="yes"/>
+                <label for="yes">آیا محل شرکت به محل سکونت شما نزدیک است؟</label> 
+                </td>
+            </tr>
+            <tr>
+                <td class="title">سابقه کاری:</td>
+                <td><input type="number" name="" id="history" placeholder="&nbsp; به سال" class="content"></td>
+            </tr>
+            <tr>
+                <td class="title">حقوق درخواستی:</td>
+                <td><input type="number" name="" id="payment" placeholder="10000000 تومان" class="content"></td>
+            </tr>
+        </table>
+        <input type="button" value="بررسی شرایط" class="btn" onclick="btntc()"/>
+    </div>
+    <section id="section">
+    
+    </section>
+    </main>
+    <script src="default.js"></script>
+</body>
+
+</html>
