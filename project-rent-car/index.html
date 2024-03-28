@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="custom.css" />
+    <title>Car Rent Project</title>
+
+</head>
+
+<body>
+    <main>
+        <div id="div-head">
+            <img src="src\images\logo.png" alt="logo" width="40px" />&nbsp;
+            <h1>نمایشگاه اجاره خودرو روزانه X</h1>
+        </div>
+        <div id="div-h">
+            <h2>لطفا خودرو مورد نظر خود را جهت اجاره انتخاب نمایید</h2>
+        </div>
+        <section id="my-sec">
+            <div class="my-div" onclick="choice(0)">
+                <div class="he-div">
+                    <h3>بی ام دبلیو i8 مدل 2015</h3>
+                </div>
+                <div class="img-div"><img src="src\images\bmw-i8.jpeg" alt="bmw-i8">
+                    <h4>اجاره خودرو روزانه 10,000,000 تومان</h4>
+                </div>
+
+            </div>
+            <div class="my-div" onclick="choice(1)">
+                <div class="he-div">
+                    <h3>بی ام دبلیو X6 مدل 2012</h3>
+                </div>
+                <div class="img-div"><img src="src\images\bmw-x6.jpeg" alt="bmw-x6">
+                    <h4>اجاره خودرو روزانه 3,500,000 تومان</h4>
+                </div>
+
+            </div>
+            <div class="my-div" onclick="choice(2)">
+                <div class="he-div">
+                    <h3>بی ام دبلیو 528 مدل 2013</h3>
+                </div>
+                <div class="img-div"><img src="src\images\bmw-528.jpeg" alt="bmw-528">
+                    <h4>اجاره خودرو روزانه 2,500,000 تومان</h4>
+                </div>
+
+            </div>
+            <div class="my-div" onclick="choice(3)">
+                <div class="he-div">
+                    <h3>مرسدس بنز E350 مدل 2014</h3>
+                </div>
+                <div class="img-div"><img src="src\images\benz-E350.jpeg" alt="benz-E350">
+                    <h4>اجاره خودرو روزانه 2,600,000 تومان</h4>
+                </div>
+
+            </div>
+            <br>
+            <div class="my-div" onclick="choice(4)">
+                <div class="he-div">
+                    <h3>تیوتا پرادو ۴ درب مدل 2015</h3>
+                </div>
+                <div class="img-div"><img src="src\images\prado-4X.jpeg" alt="prado-4X">
+                    <h4>اجاره خودرو روزانه 3,000,000 تومان</h4>
+                </div>
+
+            </div>
+            <div class="my-div" onclick="choice(5)">
+                <div class="he-div">
+                    <h3>پورشه 911 مدل 2012</h3>
+                </div>
+                <div class="img-div"><img src="src\images\porsche-911.jpeg" alt="porsche-911">
+                    <h4>اجاره خودرو روزانه 5,000,000 تومان</h4>
+                </div>
+
+            </div>
+            <div class="my-div" onclick="choice(6)">
+                <div class="he-div">
+                    <h3>پورشه باکستر مدل 2014</h3>
+                </div>
+                <div class="img-div"><img src="src\images\porsche-boxster.jpeg" alt="porsche-boxster">
+                    <h4>اجاره خودرو روزانه 2,500,000 تومان</h4>
+                </div>
+
+            </div>
+            <div class="my-div" onclick="choice(7)">
+                <div class="he-div">
+                    <h3>مرسدس بنز CLS مدل 2010</h3>
+                </div>
+                <div class="img-div"><img src="src\images\benz-cls.jpeg" alt="benz-cls">
+                    <h4>اجاره خودرو روزانه 2,600,000 تومان</h4>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <section id="sect-qwe">
+        <h1>محاسبه هزینه اجاره خودرو
+        </h1>
+        <table>
+            <tr>
+                <td>تعداد روز:</td>
+                <td><input type="number" id="day"></td>
+                <td><input type="button" value="محاسبه هزینه" class="btn" onclick="compute()"/></td>
+            </tr>
+            <tr class="art">
+                <td>هزینه:</td>
+                <td><input id="number-pr" type="number" readonly disabled></td>
+            </tr>
+        </table>
+    </section>
+    <section id="sect-xz">
+        <h1>اطلاعات اجاره کننده خودرو</h1>
+        <table>
+            <tr>
+                <td class="nbv">نام:</td>
+                <td><input type="text" id="name-com"></td>
+            </tr>
+            <tr>
+                <td class="nbv">نام خانوادگی:</td>
+                <td><input type="text" id="fname-com"></td>
+            </tr>
+            <tr>
+                <td class="nbv">شماره همراه:</td>
+                <td><input type="number" id="number"></td>
+            </tr>
+        </table>
+        <input type="button" value="اجاره خودرو" class="btn nbz" onclick="messag()"/>
+    </section>
+    <section id="sect-msg">
+<h1>اطلاعات شما با موفقیت ثبت شد</h1><br>
+<h3>تا ۲ ساعت آینده خودرو را درب منزل خود تحویل بگیرید و مدارک مورد نیاز را ارائه دهید</h3>
+    </section>
+    <script src="default.js"></script>
+</body>
+
+</html>
