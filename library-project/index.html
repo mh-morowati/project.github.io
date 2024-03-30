@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="custom.css" />
+    <title>Project7 Library</title>
+</head>
+
+<body>
+    <section id="main-section">
+       <img src="src\images\logo.png" alt="logo-book" width="140px"/>
+       <br/><br/>
+       <h3>نام کتاب یا کد کتاب</h3>
+       <input id="book-name" type="text"/>
+       <br/>
+       <span class="my-span">جهت ثبت، نام کتاب را وارد نمایید و برای حذف، کد کتاب را وارد نمایید</span>
+       <br/>
+       <input class="btn" type="button" value="ثبت کتاب" onclick="addBook()"/>
+       <input class="btn dele" type="button" value="حذف کتاب" onclick="deletBook()"/>
+    </section>
+    <section id="tab-section">
+        <table id="result-table">
+            <thead>
+                <tr>
+                    <th>کد</th>
+                    <th>نام کتاب</th>
+                    <th>عملیات</th>
+                </tr>
+            </thead>
+            <tbody id="result-body">
+            </tbody>
+        </table>
+    </section>
+    <script src="default.js"></script>
+</body>
+
+</html>
