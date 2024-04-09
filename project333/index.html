@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="custom.css" />
+    <link rel="stylesheet" href="src\images\fontawesome\css\all.css" />
+
+    <title>project Amlack</title>
+</head>
+
+<body>
+    <main>
+        <div id="my-div">
+            <img src="src\images\divar.svg" alt="divar" width="50px" />
+            <span>
+                <i class="fa-solid fa-location-pin color">
+                    <p>تهران</p>
+                </i>
+            </span>
+            <input class="btn" type="button" value="ثبت آگهی" onclick="addAds()">
+        </div>
+        <aside id="my-aside">
+            <ul>
+                <li id="li-1"><i class="fa-solid fa-house"> &nbsp;املاک</i></li>
+                <nav>
+                    <a>
+                        <li>فروش مسکونی
+                        </li>
+                    </a>
+                    <a>
+                        <li>رهن و اجاره
+                        </li>
+                    </a>
+                </nav>
+            </ul>
+            <ul>
+                <li><i class="fa-solid fa-key"> &nbsp;نوع آپارتمان</i></li>
+                <nav>
+                    <a>
+                        <li>آپارتمان</li>
+                    </a>
+                    <a>
+                        <li>خانه و ویلا</li>
+                    </a>
+                </nav>
+            </ul>
+            <hr />
+            <ul>
+                <li>
+                    <h4>محل</h4>
+                </li>
+                <li><select required name="" id="">
+                        <option disabled selected value="">تعیین محل</option>
+                        <option value="vanak">ونک</option>
+                        <option value="valanjak">ولنجک</option>
+                        <option value="saadat">سعادت آباد</option>
+                        <option value="gharb">شهرک غرب</option>
+                        <option value="pars">تهران پارس</option>
+                        <option value="jordan">جردن</option>
+                        <option value="pasdaran">پاسداران</option>
+                        <option value="azadi">آزادی</option>
+                    </select></li>
+            </ul>
+            <hr />
+            <ul>
+                <li>
+                    <h4>قیمت</h4>
+                </li>
+                <li><input type="number" placeholder="حداقل"></li>
+                <li><input type="number" placeholder="حداکثر"></li>
+            </ul>
+            <hr />
+            <ul>
+                <li>
+                    <h4>متراژ</h4>
+                </li>
+                <li><input type="number" placeholder="از"></li>
+                <li><input type="number" placeholder="تا"></li>
+            </ul>
+            <input class="btn serch" type="button" value="جستجو" onclick="search()" />
+        </aside>
+        <section id="my-section">
+            <div class="ewq-div">
+                <div class="ewq-div-ch">
+                    <h4>143متر 3خوابه مسکونی</h4>
+                    <p>10,000,000,000 تومان</p>
+                    <p>آژانس املاک کلید درالهیه</p>
+                </div>
+                <img src="src\images\1.webp" alt="" width="145px" height="180px">
+            </div>
+            <div class="ewq-div">
+                <div class="ewq-div-ch">
+                    <h4>الهیه 220متر(مشابه پنت- 4پارکینگ)</h4>
+                    <p>15,000,000,000 تومان</p>
+                    <p>آژانس املاک کلید درالهیه</p>
+                </div>
+                <img src="src\images\2.webp" alt="" width="145px" height="180px"/>
+            </div>
+                <div id="ads-item-template" class="ewq-div">
+                    <div class="ewq-div-ch">
+                        <h4>__TITLE___</h4>
+                        <p>__PRICE__</p>
+                        <p>__AGENCY__</p>
+                    </div>
+                    <img src="__IMG__" alt="" width="145px" height="180px"/>
+                </div>
+        </section>
+    </main>
+    <section id="add-ads-sec">
+        <div id="ads-div">
+            <h2>درج آگهی املاک جدید</h2>
+            <input id="btn-ex" type="button" value="x" onclick="exit()">
+            <ul class="input-ads">
+                <li>عنوان آگهی</li>
+                <li><input type="text" id="title-ad" /></li>
+                <li>آژانس املاکی</li>
+                <li><input type="text" id="name-agence" /></li>
+                <li>آدرس تصویر</li>
+                <li><input type="text" id="pic-address" /></li>
+                <li>نوع آگهی</li>
+            </ul>
+            <ul class="margin">
+                <li class="inline"><input type="radio" id="yes" name="house" value="sell" checked /></li>
+                <li class="inline"><label for="yes">فروش مسکونی</label></li>
+                <li class="inline"><input type="radio" id="yes" name="house" value="rent" /></li>
+                <li class="inline"><label for="yes">رهن و اجاره</label></li>
+            </ul>
+            <ul class="input-ads">
+                <li>محل</li>
+                <li><select required name="" id="location">
+                        <option disabled selected value="">تعیین محل</option>
+                        <option value="vanak">ونک</option>
+                        <option value="valanjak">ولنجک</option>
+                        <option value="saadat">">سعادت آباد</option>
+                        <option value="gharb">شهرک غرب</option>
+                        <option value="pars">تهران پارس</option>
+                        <option value="jordan">جردن</option>
+                        <option value="pasdaran">پاسداران</option>
+                        <option value="azadi">آزادی</option>
+                    </select></li>
+                <li>قیمت</li>
+                <li><input type="number" id="price" /></li>
+                <li>متراژ</li>
+                <li><input type="number" id="metrage" /></li>
+                <li>تعداداتاق</li>
+                <li><input type="number" id="rooms" /></li>
+                <li>سال ساخت</li>
+                <li><input type="number" id="year" /></li>
+                <li>طبقه</li>
+                <li><input type="number" id="floor" /></li>
+            </ul>
+            <ul class="margin">
+                <li class="laba">انباری</li>
+                <li class="inline"><input type="radio" id="Wareh" name="Wareh" value="yes" checked /></li>
+                <li class="inline"><label for="Wareh">دارد</label></li>
+                <li class="inline"><input type="radio" id="Wareh" name="Wareh" value="no" /></li>
+                <li class="inline"><label for="Wareh">ندارد</label></li><br />
+                <li class="laba">آسانسور</li>
+                <li class="inline"><input type="radio" id="elevator" name="elevator" value="yes" checked /></li>
+                <li class="inline"><label for="elevator">دارد</label></li>
+                <li class="inline"><input type="radio" id="elevator" name="elevator" value="no" /></li>
+                <li class="inline"><label for="elevator">ندارد</label></li><br />
+                <li class="laba">پارکینگ</li>
+                <li class="inline"><input type="radio" id="parking" name="parking" value="yes" checked /></li>
+                <li class="inline"><label for="parking">دارد</label></li>
+                <li class="inline"><input type="radio" id="parking" name="parking" value="no" /></li>
+                <li class="inline"><label for="parking">ندارد</label></li>
+            </ul>
+            <input class="btn" type="button" value="درج آگهی" onclick="putAds()" />
+            <input class="btn refs" type="button" value="انصراف" onclick="exit()" />
+        </div>
+    </section>
+    <script src="House.js"></script>
+    <script src="HouseHandler.js"></script>
+    <script src="default.js"></script>
+</body>
+
+</html>
